@@ -8,7 +8,7 @@ const pages = {
 }
 
 Given(/^I am on the (\w+) page$/, async (page) => {
-
+    
     await pages[page].open()
 });
 Then('I should see username field the login form', async () => {
